@@ -31,6 +31,9 @@
 		CF3D55892B8B96B50034B4C2 /* HLSCachingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D55882B8B96B50034B4C2 /* HLSCachingTests.swift */; };
 		CF3D55932B8B96B50034B4C2 /* HLSCachingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D55922B8B96B50034B4C2 /* HLSCachingUITests.swift */; };
 		CF3D55952B8B96B50034B4C2 /* HLSCachingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D55942B8B96B50034B4C2 /* HLSCachingUITestsLaunchTests.swift */; };
+		CFF895A72B996D6300607D36 /* AttributeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895A62B996D6300607D36 /* AttributeList.swift */; };
+		CFF895AA2B99728900607D36 /* AttributeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895A92B99728900607D36 /* AttributeValue.swift */; };
+		CFF895AC2B99731800607D36 /* AttributeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895AB2B99731800607D36 /* AttributeName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		CF3D558E2B8B96B50034B4C2 /* HLSCachingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLSCachingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3D55922B8B96B50034B4C2 /* HLSCachingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSCachingUITests.swift; sourceTree = "<group>"; };
 		CF3D55942B8B96B50034B4C2 /* HLSCachingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSCachingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CFF895A62B996D6300607D36 /* AttributeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeList.swift; sourceTree = "<group>"; };
+		CFF895A92B99728900607D36 /* AttributeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeValue.swift; sourceTree = "<group>"; };
+		CFF895AB2B99731800607D36 /* AttributeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		CF23C60A2B9425DF005395AE /* M3u8 */ = {
 			isa = PBXGroup;
 			children = (
+				CFF895A82B99727100607D36 /* AttributeList */,
 				CF23C62B2B957DC8005395AE /* Stream */,
 				CF23C62A2B957D94005395AE /* Playlist */,
 				CF23C6252B94AE58005395AE /* MasterPlaylist */,
@@ -202,6 +209,16 @@
 				CF3D55942B8B96B50034B4C2 /* HLSCachingUITestsLaunchTests.swift */,
 			);
 			path = HLSCachingUITests;
+			sourceTree = "<group>";
+		};
+		CFF895A82B99727100607D36 /* AttributeList */ = {
+			isa = PBXGroup;
+			children = (
+				CFF895A62B996D6300607D36 /* AttributeList.swift */,
+				CFF895A92B99728900607D36 /* AttributeValue.swift */,
+				CFF895AB2B99731800607D36 /* AttributeName.swift */,
+			);
+			path = AttributeList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,12 +357,15 @@
 				CF23C6352B96CB8E005395AE /* EncodedInfo.swift in Sources */,
 				CF23C6312B96C8E1005395AE /* MediaInfo.swift in Sources */,
 				CF3D55762B8B96B40034B4C2 /* ViewController.swift in Sources */,
+				CFF895A72B996D6300607D36 /* AttributeList.swift in Sources */,
 				CF23C6102B94A496005395AE /* MasterPlaylist.swift in Sources */,
+				CFF895AC2B99731800607D36 /* AttributeName.swift in Sources */,
 				CF23C6332B96C9D9005395AE /* VideoInfo.swift in Sources */,
 				CF23C6202B94AD21005395AE /* HttpMasterPlaylist.swift in Sources */,
 				CF23C6242B94AD9C005395AE /* HybridMasterPlaylist.swift in Sources */,
 				CF23C6182B94A77E005395AE /* AttributeKeyword.swift in Sources */,
 				CF23C61E2B94AA7C005395AE /* Segment.swift in Sources */,
+				CFF895AA2B99728900607D36 /* AttributeValue.swift in Sources */,
 				CF23C6122B94A4ED005395AE /* Playlist.swift in Sources */,
 				CF23C6272B957CDC005395AE /* PlaylistFile.swift in Sources */,
 				CF23C6142B94A660005395AE /* Session.swift in Sources */,
