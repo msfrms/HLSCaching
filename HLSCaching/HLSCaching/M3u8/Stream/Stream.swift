@@ -8,6 +8,5 @@
 import Foundation
 
 public protocol Stream {
-    func streamInfo() -> StreamInfo
     func playlist() -> PlaylistFile
 }
