@@ -9,6 +9,7 @@ import Foundation
 
 public struct AttributeName {
     public let value: String
+
     public init(_ value: String) {
         self.value = value
     }

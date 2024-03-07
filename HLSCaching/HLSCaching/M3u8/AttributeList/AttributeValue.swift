@@ -13,5 +13,6 @@ public enum AttributeValue {
     case size(CGSize)
     case double(Double)
     case integer(Int)
+    case boolean(Bool)
     case none
 }
