@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol Stream {
-    func playlist() -> PlaylistFile
+    func playlist() async throws -> Playlist
 }

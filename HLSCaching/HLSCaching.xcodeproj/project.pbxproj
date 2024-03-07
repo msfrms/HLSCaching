@@ -15,7 +15,6 @@
 		CF23C6202B94AD21005395AE /* HttpMasterPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23C61F2B94AD21005395AE /* HttpMasterPlaylist.swift */; };
 		CF23C6222B94AD61005395AE /* LocalMasterPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23C6212B94AD61005395AE /* LocalMasterPlaylist.swift */; };
 		CF23C6242B94AD9C005395AE /* HybridMasterPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23C6232B94AD9C005395AE /* HybridMasterPlaylist.swift */; };
-		CF23C6272B957CDC005395AE /* PlaylistFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23C6262B957CDC005395AE /* PlaylistFile.swift */; };
 		CF23C6292B957D0B005395AE /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23C6282B957D0B005395AE /* Stream.swift */; };
 		CF3D55722B8B96B40034B4C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D55712B8B96B40034B4C2 /* AppDelegate.swift */; };
 		CF3D55742B8B96B40034B4C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D55732B8B96B40034B4C2 /* SceneDelegate.swift */; };
@@ -58,7 +57,6 @@
 		CF23C61F2B94AD21005395AE /* HttpMasterPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMasterPlaylist.swift; sourceTree = "<group>"; };
 		CF23C6212B94AD61005395AE /* LocalMasterPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMasterPlaylist.swift; sourceTree = "<group>"; };
 		CF23C6232B94AD9C005395AE /* HybridMasterPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridMasterPlaylist.swift; sourceTree = "<group>"; };
-		CF23C6262B957CDC005395AE /* PlaylistFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistFile.swift; sourceTree = "<group>"; };
 		CF23C6282B957D0B005395AE /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
 		CF3D556E2B8B96B40034B4C2 /* HLSCaching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLSCaching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3D55712B8B96B40034B4C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				CF23C6112B94A4ED005395AE /* Playlist.swift */,
-				CF23C6262B957CDC005395AE /* PlaylistFile.swift */,
 			);
 			path = Playlist;
 			sourceTree = "<group>";
@@ -352,7 +349,6 @@
 				CF23C61E2B94AA7C005395AE /* Segment.swift in Sources */,
 				CFF895AA2B99728900607D36 /* AttributeValue.swift in Sources */,
 				CF23C6122B94A4ED005395AE /* Playlist.swift in Sources */,
-				CF23C6272B957CDC005395AE /* PlaylistFile.swift in Sources */,
 				CF23C6142B94A660005395AE /* Session.swift in Sources */,
 				CF3D55722B8B96B40034B4C2 /* AppDelegate.swift in Sources */,
 				CF3D55742B8B96B40034B4C2 /* SceneDelegate.swift in Sources */,

@@ -8,7 +8,7 @@
 import Foundation
 
 public struct VariantStream: Stream, AttributeList {
-    public func playlist() -> PlaylistFile {
+    public func playlist() async throws -> Playlist {
         fatalError()
     }
     
