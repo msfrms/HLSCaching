@@ -7,12 +7,21 @@
 
 import Foundation
 
+
 public struct VariantStream: Stream, AttributeList {
+    private let rootUrl: URL
+    private let rawStream: String
+    
+    init(rootUrl: URL, rawStream: String) {
+        self.rootUrl = rootUrl
+        self.rawStream = rawStream
+    }
+    
     public func playlist() async throws -> Playlist {
         fatalError()
     }
     
-    public func attribute(for name: AttributeName) -> AttributeValue {
+    public func attribute(for name: Attribute.Name) -> Attribute.Value {
         fatalError()
     }
 }
