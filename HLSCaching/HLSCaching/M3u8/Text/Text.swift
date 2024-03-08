@@ -1,5 +1,5 @@
 //
-//  TextLine.swift
+//  Text.swift
 //  HLSCaching
 //
 //  Created by Mikhail Radaev on 08.03.2024.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol TextLine {
+protocol Text {
     func content() -> String
     func tokens() -> [String]
 }
 
-extension TextLine {
+extension Text {
     func tokens() -> [String] {
         content().components(separatedBy: "")
     }

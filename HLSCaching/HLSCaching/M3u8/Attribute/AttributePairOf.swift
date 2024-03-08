@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AttributePairOf: TextLineBase {
+class AttributePairOf: TextBase {
     override func tokens() -> [String] {
         content().components(separatedBy: "=")
     }

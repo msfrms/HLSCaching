@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class TagOf: TextLineBase {
+final class TagOf: TextBase {
     override func content() -> String {
         super.tokens()[0]
     }

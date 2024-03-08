@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SeparationTagAndAttributeListOf: TextLineBase {
+class SeparationTagAndAttributeListOf: TextBase {
     override func tokens() -> [String] {
         super.content().components(separatedBy: ":")
     }

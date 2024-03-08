@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AttributeListOf: TextLineBase {
+class AttributeListOf: TextBase {
     override func content() -> String {
         super.tokens()[1]
     }
