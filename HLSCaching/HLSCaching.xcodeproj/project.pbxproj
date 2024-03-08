@@ -26,9 +26,11 @@
 		CF3D55932B8B96B50034B4C2 /* HLSCachingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D55922B8B96B50034B4C2 /* HLSCachingUITests.swift */; };
 		CF3D55952B8B96B50034B4C2 /* HLSCachingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D55942B8B96B50034B4C2 /* HLSCachingUITestsLaunchTests.swift */; };
 		CFF895A72B996D6300607D36 /* AttributeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895A62B996D6300607D36 /* AttributeList.swift */; };
-		CFF895AA2B99728900607D36 /* AttributeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895A92B99728900607D36 /* AttributeValue.swift */; };
-		CFF895AC2B99731800607D36 /* AttributeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895AB2B99731800607D36 /* AttributeName.swift */; };
+		CFF895AC2B99731800607D36 /* Attribute+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895AB2B99731800607D36 /* Attribute+Names.swift */; };
 		CFF895AE2B9974DB00607D36 /* VariantStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895AD2B9974DB00607D36 /* VariantStream.swift */; };
+		CFF895B02B9ACE1A00607D36 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895AF2B9ACE1A00607D36 /* Attribute.swift */; };
+		CFF895B22B9AD1B900607D36 /* ParsedAttributeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895B12B9AD1B900607D36 /* ParsedAttributeList.swift */; };
+		CFF895B42B9B306600607D36 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895B32B9B306600607D36 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +74,11 @@
 		CF3D55922B8B96B50034B4C2 /* HLSCachingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSCachingUITests.swift; sourceTree = "<group>"; };
 		CF3D55942B8B96B50034B4C2 /* HLSCachingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSCachingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CFF895A62B996D6300607D36 /* AttributeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeList.swift; sourceTree = "<group>"; };
-		CFF895A92B99728900607D36 /* AttributeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeValue.swift; sourceTree = "<group>"; };
-		CFF895AB2B99731800607D36 /* AttributeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeName.swift; sourceTree = "<group>"; };
+		CFF895AB2B99731800607D36 /* Attribute+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Attribute+Names.swift"; sourceTree = "<group>"; };
 		CFF895AD2B9974DB00607D36 /* VariantStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantStream.swift; sourceTree = "<group>"; };
+		CFF895AF2B9ACE1A00607D36 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		CFF895B12B9AD1B900607D36 /* ParsedAttributeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedAttributeList.swift; sourceTree = "<group>"; };
+		CFF895B32B9B306600607D36 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				CF23C6252B94AE58005395AE /* MasterPlaylist */,
 				CF23C61D2B94AA7C005395AE /* Segment.swift */,
 				CF23C6132B94A660005395AE /* Session.swift */,
+				CFF895B32B9B306600607D36 /* Example.swift */,
 			);
 			path = M3u8;
 			sourceTree = "<group>";
@@ -200,8 +205,9 @@
 			isa = PBXGroup;
 			children = (
 				CFF895A62B996D6300607D36 /* AttributeList.swift */,
-				CFF895A92B99728900607D36 /* AttributeValue.swift */,
-				CFF895AB2B99731800607D36 /* AttributeName.swift */,
+				CFF895AB2B99731800607D36 /* Attribute+Names.swift */,
+				CFF895AF2B9ACE1A00607D36 /* Attribute.swift */,
+				CFF895B12B9AD1B900607D36 /* ParsedAttributeList.swift */,
 			);
 			path = AttributeList;
 			sourceTree = "<group>";
@@ -342,16 +348,18 @@
 				CF3D55762B8B96B40034B4C2 /* ViewController.swift in Sources */,
 				CFF895A72B996D6300607D36 /* AttributeList.swift in Sources */,
 				CF23C6102B94A496005395AE /* MasterPlaylist.swift in Sources */,
-				CFF895AC2B99731800607D36 /* AttributeName.swift in Sources */,
+				CFF895AC2B99731800607D36 /* Attribute+Names.swift in Sources */,
 				CF23C6202B94AD21005395AE /* HttpMasterPlaylist.swift in Sources */,
 				CF23C6242B94AD9C005395AE /* HybridMasterPlaylist.swift in Sources */,
+				CFF895B42B9B306600607D36 /* Example.swift in Sources */,
+				CFF895B22B9AD1B900607D36 /* ParsedAttributeList.swift in Sources */,
 				CFF895AE2B9974DB00607D36 /* VariantStream.swift in Sources */,
 				CF23C61E2B94AA7C005395AE /* Segment.swift in Sources */,
-				CFF895AA2B99728900607D36 /* AttributeValue.swift in Sources */,
 				CF23C6122B94A4ED005395AE /* Playlist.swift in Sources */,
 				CF23C6142B94A660005395AE /* Session.swift in Sources */,
 				CF3D55722B8B96B40034B4C2 /* AppDelegate.swift in Sources */,
 				CF3D55742B8B96B40034B4C2 /* SceneDelegate.swift in Sources */,
+				CFF895B02B9ACE1A00607D36 /* Attribute.swift in Sources */,
 				CF23C6292B957D0B005395AE /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
