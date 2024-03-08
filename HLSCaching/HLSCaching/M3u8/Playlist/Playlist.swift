@@ -7,9 +7,9 @@
 
 import Foundation
 
-public enum PlaylistType {
-    case vod
-    case event
+public enum PlaylistType: String {
+    case vod = "VOD"
+    case event = "EVENT"
 }
 
 public protocol Playlist {

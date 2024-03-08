@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol AttributeList {
-    func attribute(for name: AttributeName) -> AttributeValue
+    func attribute(for name: Attribute.Name) -> Attribute.Value
 }
