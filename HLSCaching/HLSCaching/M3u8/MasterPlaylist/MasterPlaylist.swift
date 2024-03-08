@@ -9,8 +9,7 @@ import Foundation
 
 public struct MasterPlaylist {
     public let streams: [Stream]
-    public let onlyIFrameStreams: [Stream]
-    public let session: Session
+    public let onlyIFrameStreams: [Stream]    
     public let version: Int
     public let independedSegments: Bool
 }
