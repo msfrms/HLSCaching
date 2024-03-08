@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum AttributeValue {
+public enum AttributeValue: Equatable {
         case string(String)
         case enumeratedString([String])
         case size(CGSize)

@@ -9,5 +9,5 @@ import Foundation
 
 public protocol Attribute {
     func name() -> AttributeName
-    func value() -> String
+    func value() -> AttributeValue
 }

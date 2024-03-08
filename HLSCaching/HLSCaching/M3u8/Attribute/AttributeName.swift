@@ -7,10 +7,10 @@
 
 import Foundation
 
-public struct AttributeName {
+public struct AttributeName: Equatable {
     let name: String
     
-    init(_ name: String) {
+    public init(_ name: String) {
         self.name = name
     }
 }

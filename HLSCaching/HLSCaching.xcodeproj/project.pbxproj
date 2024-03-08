@@ -123,24 +123,16 @@
 		CF23C60A2B9425DF005395AE /* M3u8 */ = {
 			isa = PBXGroup;
 			children = (
+				CFF895E72B9B5D2200607D36 /* Tag */,
+				CFF895E62B9B5D0700607D36 /* TextLine */,
+				CFF895E52B9B5C7100607D36 /* Attribute */,
 				CFF895D72B9B59AC00607D36 /* MasterPlaylist */,
 				CFF895D22B9B59AC00607D36 /* Playlist */,
 				CFF895D52B9B59AC00607D36 /* Stream */,
 				CFF895D42B9B59AC00607D36 /* Segment.swift */,
-				CFF895B52B9B477700607D36 /* TextLine.swift */,
-				CFF895B72B9B47CB00607D36 /* String+TextLine.swift */,
-				CFF895BC2B9B486800607D36 /* TextLineBase.swift */,
-				CFF895BA2B9B481600607D36 /* TagOf.swift */,
-				CFF895BE2B9B488A00607D36 /* AttributeNameOf.swift */,
-				CFF895C02B9B489D00607D36 /* AttributeValueOf.swift */,
-				CFF895C22B9B48B000607D36 /* AttributeListOf.swift */,
-				CFF895C42B9B48C100607D36 /* AttributePairOf.swift */,
 				CFF895C62B9B48FE00607D36 /* Text.swift */,
 				CFF895C82B9B491000607D36 /* DescriptiveTag.swift */,
 				CFF895CA2B9B4A6000607D36 /* SeparationTagAndAttributeListOf.swift */,
-				CFF895CC2B9B582E00607D36 /* Attribute.swift */,
-				CFF895CE2B9B588700607D36 /* AttributeName.swift */,
-				CFF895D02B9B58F000607D36 /* AttributeValue.swift */,
 			);
 			path = M3u8;
 			sourceTree = "<group>";
@@ -223,6 +215,38 @@
 				CFF895DC2B9B59AC00607D36 /* HttpMasterPlaylist.swift */,
 			);
 			path = MasterPlaylist;
+			sourceTree = "<group>";
+		};
+		CFF895E52B9B5C7100607D36 /* Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				CFF895CC2B9B582E00607D36 /* Attribute.swift */,
+				CFF895CE2B9B588700607D36 /* AttributeName.swift */,
+				CFF895D02B9B58F000607D36 /* AttributeValue.swift */,
+				CFF895BE2B9B488A00607D36 /* AttributeNameOf.swift */,
+				CFF895C02B9B489D00607D36 /* AttributeValueOf.swift */,
+				CFF895C22B9B48B000607D36 /* AttributeListOf.swift */,
+				CFF895C42B9B48C100607D36 /* AttributePairOf.swift */,
+			);
+			path = Attribute;
+			sourceTree = "<group>";
+		};
+		CFF895E62B9B5D0700607D36 /* TextLine */ = {
+			isa = PBXGroup;
+			children = (
+				CFF895B52B9B477700607D36 /* TextLine.swift */,
+				CFF895B72B9B47CB00607D36 /* String+TextLine.swift */,
+				CFF895BC2B9B486800607D36 /* TextLineBase.swift */,
+			);
+			path = TextLine;
+			sourceTree = "<group>";
+		};
+		CFF895E72B9B5D2200607D36 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				CFF895BA2B9B481600607D36 /* TagOf.swift */,
+			);
+			path = Tag;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
