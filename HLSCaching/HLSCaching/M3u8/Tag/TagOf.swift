@@ -8,7 +8,11 @@
 import Foundation
 
 final class TagOf: TextBase {
-    override func content() -> String {
-        super.tokens()[0]
+    override init(text: Text) {
+        super.init(text: TextSeparationByColonCharacter(text: text))
+    }
+    
+    override func content() -> Text {
+        tokens()[0]
     }
 }

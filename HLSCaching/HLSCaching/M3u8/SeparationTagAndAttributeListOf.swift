@@ -8,7 +8,7 @@
 import Foundation
 
 class SeparationTagAndAttributeListOf: TextBase {
-    override func tokens() -> [String] {
-        super.content().components(separatedBy: ":")
+    override init(text: Text) {
+        super.init(text: TextSeparationByColonCharacter(text: text))
     }
 }

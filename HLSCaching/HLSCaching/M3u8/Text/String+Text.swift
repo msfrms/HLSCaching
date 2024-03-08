@@ -8,7 +8,11 @@
 import Foundation
 
 extension String: Text {
-    public func content() -> String {
+    func tokens() -> [Text] {
+        TextSeparationByEmptyCharacter(text: content()).tokens()
+    }
+    
+    func content() -> Text {
         self
     }
 }

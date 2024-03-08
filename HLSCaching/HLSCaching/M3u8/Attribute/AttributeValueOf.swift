@@ -7,8 +7,12 @@
 
 import Foundation
 
-class AttributeValueOf: AttributePairOf {
-    override func content() -> String {
-        super.tokens()[1]
+class AttributeValueOf: TextBase {
+    override init(text: Text) {
+        super.init(text: TextSeparationByEquallyCharacter(text: text))
+    }
+    
+    override func content() -> Text {
+        tokens()[1]
     }
 }

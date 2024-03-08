@@ -14,11 +14,11 @@ class TextBase: Text {
         self.text = text
     }
     
-    func content() -> String {
+    func content() -> Text {
         text.content()
     }
     
-    func tokens() -> [String] {
+    func tokens() -> [Text] {
         text.tokens()
     }
 }

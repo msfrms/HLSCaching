@@ -8,12 +8,12 @@
 import Foundation
 
 protocol Text {
-    func content() -> String
-    func tokens() -> [String]
+    func content() -> Text
+    func tokens() -> [Text]
 }
 
 extension Text {
     func tokens() -> [String] {
-        content().components(separatedBy: "")
+        []
     }
 }
