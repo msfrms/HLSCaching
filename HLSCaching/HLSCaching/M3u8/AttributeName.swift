@@ -2,16 +2,16 @@
 //  AttributeName.swift
 //  HLSCaching
 //
-//  Created by Mikhail Radaev on 07.03.2024.
+//  Created by Mikhail Radaev on 08.03.2024.
 //
 
 import Foundation
 
 public struct AttributeName {
-    public let value: String
-
-    public init(_ value: String) {
-        self.value = value
+    let name: String
+    
+    init(_ name: String) {
+        self.name = name
     }
 }
 
