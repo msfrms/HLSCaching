@@ -15,4 +15,8 @@ final class TagOf: TextBase {
     override func content() -> Text {
         tokens()[0]
     }
+    
+    override func tokens() -> [Text] {
+        [Text](super.tokens().dropLast())
+    }
 }

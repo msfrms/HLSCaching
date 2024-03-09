@@ -15,13 +15,13 @@ class TextSeparationBy: Text {
         self.text = text
         self.character = character
     }
-    
+
     func content() -> Text {
-        text
+        text.content()
     }
     
     func tokens() -> [Text] {
-        guard let text = text as? String else {
+        guard let text = content() as? String else {
             return []
         }
         return text.components(separatedBy: character)
