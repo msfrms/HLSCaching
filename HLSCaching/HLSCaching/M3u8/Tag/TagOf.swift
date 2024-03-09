@@ -7,16 +7,4 @@
 
 import Foundation
 
-final class TagOf: TextBase {
-    override init(text: Text) {
-        super.init(text: TextSeparationByColonCharacter(text: text))
-    }
-    
-    override func content() -> Text {
-        tokens()[0]
-    }
-    
-    override func tokens() -> [Text] {
-        [Text](super.tokens().dropLast())
-    }
-}
+final class TagOf: TextBase {}

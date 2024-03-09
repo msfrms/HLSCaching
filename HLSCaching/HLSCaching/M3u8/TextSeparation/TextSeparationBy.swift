@@ -21,10 +21,7 @@ class TextSeparationBy: Text {
     }
     
     func tokens() -> [Text] {
-        guard let text = content() as? String else {
-            return []
-        }
-        return text.components(separatedBy: character)
+        return ToString(text: text).description.components(separatedBy: character)
     }
 }
 

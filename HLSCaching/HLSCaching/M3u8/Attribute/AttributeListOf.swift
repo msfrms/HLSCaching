@@ -10,17 +10,11 @@ import Foundation
 class AttributeListOf: TextBase {
     override init(text: Text) {
         super.init(
-            text: TextSeparationByCommaCharacter(
-                text: TextSeparationByColonCharacter(text: text)
-            )
+            text: TextSeparationByCommaCharacter(text: text)
         )
     }
-    
-    override func content() -> Text {
-        tokens()[0]
-    }
-    
+
     override func tokens() -> [Text] {
-        [Text](super.tokens().dropFirst())
+        super.tokens().map { AttributeOf(text: $0) }
     }
 }

@@ -8,11 +8,19 @@
 import Foundation
 
 class AttributeNameOf: TextBase {
-    override init(text: Text) {
-        super.init(text: TextSeparationByEquallyCharacter(text: text))
+    convenience init(string: String) {
+        self.init(text: AttributeOf(text: string))
     }
     
     override func content() -> Text {
-        tokens()[0]
+        let tokens = super.tokens()
+        guard !tokens.isEmpty else {
+            return ""
+        }
+        return tokens[0]
+    }
+    
+    override func tokens() -> [Text] {
+        []
     }
 }
