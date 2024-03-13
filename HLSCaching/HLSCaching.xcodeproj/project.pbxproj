@@ -44,6 +44,12 @@
 		CFF895F82B9C44FD00607D36 /* ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895F72B9C44FD00607D36 /* ToString.swift */; };
 		CFF895FA2B9C460800607D36 /* AttributeOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895F92B9C460800607D36 /* AttributeOf.swift */; };
 		CFF895FC2B9C4A2B00607D36 /* SeparationTagAndAtributeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895FB2B9C4A2B00607D36 /* SeparationTagAndAtributeList.swift */; };
+		CFF896002BA004AD00607D36 /* MergingStringsIntoTextOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF895FF2BA004AD00607D36 /* MergingStringsIntoTextOver.swift */; };
+		CFF896022BA004C300607D36 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF896012BA004C300607D36 /* Tag.swift */; };
+		CFF896042BA14E9100607D36 /* TextStringWithTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF896032BA14E9100607D36 /* TextStringWithTag.swift */; };
+		CFF896072BA14EC300607D36 /* RandomAccessCollection+Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF896062BA14EC300607D36 /* RandomAccessCollection+Slice.swift */; };
+		CFF8960A2BA150D400607D36 /* GroupTextStringsBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF896092BA150D400607D36 /* GroupTextStringsBy.swift */; };
+		CFF8960C2BA150F600607D36 /* GroupTextStringsByStreamInfTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8960B2BA150F600607D36 /* GroupTextStringsByStreamInfTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +111,12 @@
 		CFF895F72B9C44FD00607D36 /* ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToString.swift; sourceTree = "<group>"; };
 		CFF895F92B9C460800607D36 /* AttributeOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeOf.swift; sourceTree = "<group>"; };
 		CFF895FB2B9C4A2B00607D36 /* SeparationTagAndAtributeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparationTagAndAtributeList.swift; sourceTree = "<group>"; };
+		CFF895FF2BA004AD00607D36 /* MergingStringsIntoTextOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergingStringsIntoTextOver.swift; sourceTree = "<group>"; };
+		CFF896012BA004C300607D36 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		CFF896032BA14E9100607D36 /* TextStringWithTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStringWithTag.swift; sourceTree = "<group>"; };
+		CFF896062BA14EC300607D36 /* RandomAccessCollection+Slice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+Slice.swift"; sourceTree = "<group>"; };
+		CFF896092BA150D400607D36 /* GroupTextStringsBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTextStringsBy.swift; sourceTree = "<group>"; };
+		CFF8960B2BA150F600607D36 /* GroupTextStringsByStreamInfTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTextStringsByStreamInfTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,8 @@
 		CF23C60A2B9425DF005395AE /* M3u8 */ = {
 			isa = PBXGroup;
 			children = (
+				CFF896082BA1509E00607D36 /* GroupTextStrings */,
+				CFF896052BA14EA800607D36 /* Extensions */,
 				CFF895F22B9B7BB000607D36 /* TextSeparation */,
 				CFF895E72B9B5D2200607D36 /* Tag */,
 				CFF895E62B9B5D0700607D36 /* Text */,
@@ -258,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				CFF895BA2B9B481600607D36 /* TagOf.swift */,
+				CFF896012BA004C300607D36 /* Tag.swift */,
+				CFF896032BA14E9100607D36 /* TextStringWithTag.swift */,
 			);
 			path = Tag;
 			sourceTree = "<group>";
@@ -273,6 +289,24 @@
 				CFF895F52B9C19E100607D36 /* TextSeparationByCommaCharacter.swift */,
 			);
 			path = TextSeparation;
+			sourceTree = "<group>";
+		};
+		CFF896052BA14EA800607D36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFF896062BA14EC300607D36 /* RandomAccessCollection+Slice.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFF896082BA1509E00607D36 /* GroupTextStrings */ = {
+			isa = PBXGroup;
+			children = (
+				CFF895FF2BA004AD00607D36 /* MergingStringsIntoTextOver.swift */,
+				CFF896092BA150D400607D36 /* GroupTextStringsBy.swift */,
+				CFF8960B2BA150F600607D36 /* GroupTextStringsByStreamInfTag.swift */,
+			);
+			path = GroupTextStrings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,20 +440,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF896022BA004C300607D36 /* Tag.swift in Sources */,
 				CFF895F62B9C19E100607D36 /* TextSeparationByCommaCharacter.swift in Sources */,
 				CFF895EF2B9B794E00607D36 /* TextSeparationByNewLineCharacter.swift in Sources */,
 				CFF895E02B9B59AC00607D36 /* MasterPlaylistFile.swift in Sources */,
 				CFF895E12B9B59AC00607D36 /* LocalMasterPlaylist.swift in Sources */,
+				CFF896042BA14E9100607D36 /* TextStringWithTag.swift in Sources */,
 				CF3D55762B8B96B40034B4C2 /* ViewController.swift in Sources */,
 				CFF895C32B9B48B000607D36 /* AttributeListOf.swift in Sources */,
 				CFF895F42B9B7BD000607D36 /* TextSeparationByEmptyCharacter.swift in Sources */,
+				CFF8960A2BA150D400607D36 /* GroupTextStringsBy.swift in Sources */,
 				CFF895B62B9B477700607D36 /* Text.swift in Sources */,
 				CFF895F82B9C44FD00607D36 /* ToString.swift in Sources */,
+				CFF896002BA004AD00607D36 /* MergingStringsIntoTextOver.swift in Sources */,
 				CFF895FC2B9C4A2B00607D36 /* SeparationTagAndAtributeList.swift in Sources */,
 				CFF895EB2B9B75E000607D36 /* TextSeparationBy.swift in Sources */,
 				CFF895E32B9B59AC00607D36 /* HybridMasterPlaylist.swift in Sources */,
 				CFF895CF2B9B588700607D36 /* AttributeName.swift in Sources */,
 				CFF895ED2B9B78B400607D36 /* TextSeparationByColonCharacter.swift in Sources */,
+				CFF896072BA14EC300607D36 /* RandomAccessCollection+Slice.swift in Sources */,
 				CFF895BB2B9B481600607D36 /* TagOf.swift in Sources */,
 				CFF895E42B9B59AC00607D36 /* HttpMasterPlaylist.swift in Sources */,
 				CFF895D12B9B58F000607D36 /* AttributeValue.swift in Sources */,
@@ -427,6 +466,7 @@
 				CFF895E22B9B59AC00607D36 /* MasterPlaylist.swift in Sources */,
 				CFF895BD2B9B486800607D36 /* TextBase.swift in Sources */,
 				CFF895DE2B9B59AC00607D36 /* Segment.swift in Sources */,
+				CFF8960C2BA150F600607D36 /* GroupTextStringsByStreamInfTag.swift in Sources */,
 				CFF895F12B9B79E200607D36 /* TextSeparationByEqualsCharacter.swift in Sources */,
 				CFF895FA2B9C460800607D36 /* AttributeOf.swift in Sources */,
 				CF3D55722B8B96B40034B4C2 /* AppDelegate.swift in Sources */,
