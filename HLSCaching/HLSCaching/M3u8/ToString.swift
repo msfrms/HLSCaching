@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct ToString: CustomStringConvertible {
+class ToString: CustomStringConvertible {
+    
+    private let text: Text
+    
     var description: String {
         guard let string = text as? String else {
             return "\(text)"
@@ -15,5 +18,7 @@ struct ToString: CustomStringConvertible {
         return string
     }
     
-    let text: Text
+    init(text: Text) {
+        self.text = text
+    }
 }

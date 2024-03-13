@@ -22,3 +22,9 @@ class TextBase: Text {
         text.tokens()
     }
 }
+
+extension TextBase: CustomStringConvertible {
+    var description: String {
+        ToString(text: content()).description
+    }
+}
