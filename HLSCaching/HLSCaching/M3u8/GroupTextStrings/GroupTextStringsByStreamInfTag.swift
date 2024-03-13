@@ -11,9 +11,9 @@ final class GroupTextStringsByStreamInfTag: TextBase {
     override init(text: Text) {
         super.init(
             text: GroupTextStringsBy(
-                tag: .iFrameStreamInf,
+                tag: .streamInf,
                 text: text,
-                groupSize: 1
+                groupSize: 2
             )
         )
     }
